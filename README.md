@@ -1,3 +1,3 @@
 # aridowmlpfr
-French mlp comics translation
+French mlp comics translation  
 https://aridowmlp.carrd.co/
