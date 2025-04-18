@@ -1,1 +1,50 @@
-test
+<!doctype html>
+<html>
+  <head>
+    <title>Comics MLP en français</title>
+    <style>
+#wrapper {
+  color: red;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+}
+#main {
+  --alignment: left;
+  --flex-alignment: flex-start;
+  --indent-left: 1;
+  --indent-right: 0;
+  --margin-left: 0;
+  --margin-right: auto;
+  --border-radius-tl: 1.375rem;
+  --border-radius-tr: 1.375rem;
+  --border-radius-br: 1.375rem;
+  --border-radius-bl: 1.375rem;
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  background-color: #333642;
+  border-radius: 1.375rem 1.375rem 1.375rem 1.375rem;
+  transition: opacity 1s ease 0s,transform 1s ease 0s;
+}
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="main">
+      </div>
+    </div>
+  </body>
+</html>
