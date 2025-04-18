@@ -1,7 +1,7 @@
-<!doctype html>
 <html>
   <head>
     <title>Comics MLP en français</title>
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <style>
       body {
         background-image: url('https://derpicdn.net/img/view/2020/5/10/2344321.jpg');
@@ -20,7 +20,7 @@
 		overflow: hidden;
 		position: relative;
 		z-index: 2;
-		padding: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+		padding: 1.5625rem;
 		box-sizing: border-box;
 		}
 	  .inner {
@@ -29,7 +29,7 @@
 		padding-right: 62.5px;
 		height: 693.5px;
 		background-color: #333642;
-		border-radius: 1.375rem 1.375rem 1.375rem 1.375rem; /*à vérifier*/
+		border-radius: 1.7rem;
 		}
 	  .header {
 		max-width: 1095px;
@@ -68,9 +68,90 @@
 		font-size: 1.68em;
 		line-height: 1.5;
 		font-weight: 400;
-
+	    }
+	  ul {
+		width: 1215px;
+		padding: 0;
+		padding-top: 35px;
+		gap: 1.4rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	    }
+	  li.navigation {
+		text-align: center;
+		width: 487.5px;
+		height: 75px;
+		border: solid 2px #66B4ED;
+		border-radius: 0.7rem;
+		list-style-position: outside;
+		list-style-image: none;
+		list-style-type: none;
+		display: inline-block;
+		transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+	    }
+	  li.navigation:hover {
+		transform: scale(1.0425);
+		transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+		}
+	  a.intra {
+		display: flex;
+		width: 408.5px;
+		padding: 0 37.5px;
+		height: 75px;
+		text-decoration: none;
+		align-items: center;
+		}
+	  svg.arrow {
+		fill: #66B4ED;
+		flex-grow: 0;
+		flex-shrink: 0;
+		height: 100%;
+		min-width: 16px;
+		pointer-events: none;
+		width: 2.7em;
+		margin-left: 0.5em;
+		margin-right: calc(-0.125em + 0rem);
+		transition: fill 0.25s ease;
+		}
+	  .label {
+		width: 358.5px;
+		text-align: left;
+		color: #66B4ED;
+		font-family: 'Inter', sans-serif;
+		font-size: 1.3em;
+		line-height: 1.5;
+		font-weight: 600;
+		display: flex;
 	  }
-		
+	  li.network {
+		text-align: center;
+		border-radius: 0.7rem;
+		list-style-position: outside;
+		list-style-image: none;
+		list-style-type: none;
+		display: inline-block;
+		transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+	    }
+	  li.network:hover {
+		transform: scale(1.06);
+		transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+		}
+	  a.extra {
+		display: flex;
+		width: 55px;
+		height: 55px;
+		background-color: #66B4ED;
+		border-radius: 0.7rem;
+		align-items: center;
+		}
+	  svg.icon {
+	  height: 60%;
+		width: 100%;
+		fill: #333642;
+	  }
     </style>
   </head>
   <body>
@@ -85,6 +166,67 @@
 						<p>Je traduis des comics officiels de My Little Pony en français.</p>
 					</div>
 				</div>
+				<ul>
+					<li class="navigation">
+						<a class="intra" href="fim" role="button">
+							<span class="label">Friendship is Magic (5)</span>
+							<svg class="arrow" viewBox="0 0 40 40">
+									<path d="M12.9,32.4L25.3,20L13,7.6c-0.2-0.2-0.2-0.5,0-0.7l1.6-1.6c0.2-0.2,0.5-0.2,0.7,0L29.8,20L15.1,34.6c-0.2,0.2-0.5,0.2-0.7,0 l-1.6-1.6C12.7,32.9,12.7,32.6,12.9,32.4z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="navigation">
+						<a class="intra" href="ff" role="button">
+							<span class="label">Friends Forever (1)</span>
+							<svg class="arrow" viewBox="0 0 40 40">
+								<path d="M12.9,32.4L25.3,20L13,7.6c-0.2-0.2-0.2-0.5,0-0.7l1.6-1.6c0.2-0.2,0.5-0.2,0.7,0L29.8,20L15.1,34.6c-0.2,0.2-0.5,0.2-0.7,0 l-1.6-1.6C12.7,32.9,12.7,32.6,12.9,32.4z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="navigation">
+						<a class="intra" href="forest" role="button">
+							<span class="label">Spirit of the Forest (3/3)</span>
+							<svg class="arrow" viewBox="0 0 40 40">
+								<path d="M12.9,32.4L25.3,20L13,7.6c-0.2-0.2-0.2-0.5,0-0.7l1.6-1.6c0.2-0.2,0.5-0.2,0.7,0L29.8,20L15.1,34.6c-0.2,0.2-0.5,0.2-0.7,0 l-1.6-1.6C12.7,32.9,12.7,32.6,12.9,32.4z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="navigation">
+						<a class="intra" href="manga" role="button">
+							<span class="label">Manga</span>
+							<svg class="arrow" viewBox="0 0 40 40">
+								<path d="M12.9,32.4L25.3,20L13,7.6c-0.2-0.2-0.2-0.5,0-0.7l1.6-1.6c0.2-0.2,0.5-0.2,0.7,0L29.8,20L15.1,34.6c-0.2,0.2-0.5,0.2-0.7,0 l-1.6-1.6C12.7,32.9,12.7,32.6,12.9,32.4z"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="network">
+						<a class="extra" href="https://x.com/Haridow" role="button">
+							<svg class="icon" viewBox="0 0 40 40">
+								<path d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="network">
+						<a class="extra" href="https://bsky.app/profile/aridow.bsky.social" role="button">
+							<svg class="icon" viewBox="0 0 40 40">
+								<path d="M20,19.7c-1.6-3.1-5.9-8.8-9.9-11.6C6.2,5.4,4.8,5.9,3.8,6.3C2.7,6.8,2.5,8.5,2.5,9.5s0.6,8.2,0.9,9.4 c1.2,4,5.4,5.3,9.3,4.9c0.2,0,0.4-0.1,0.6-0.1c-0.2,0-0.4,0.1-0.6,0.1C7,24.7,1.9,26.8,8.6,34.2c7.3,7.6,10-1.6,11.4-6.3 c1.4,4.7,3,13.5,11.3,6.3c6.2-6.3,1.7-9.5-4-10.3c-0.2,0-0.4,0-0.6-0.1c0.2,0,0.4,0.1,0.6,0.1c3.9,0.4,8.1-0.9,9.3-4.9 c0.4-1.2,0.9-8.4,0.9-9.4s-0.2-2.7-1.3-3.2c-1-0.4-2.4-0.9-6.3,1.8C25.9,10.9,21.6,16.7,20,19.7z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="network">
+						<a class="extra" href="" role="button">
+							<svg class="icon" viewBox="0 0 40 40">
+								<path d="M17.7,8.7c4.3,0,8.6,0,12.9,0c4.2,0,8,3.1,8.7,7.3c0.7,4.4-1.4,8.3-5.6,9.8c-1.2,0.4-2.5,0.5-3.8,0.7 c-0.5,0.1-0.8,0.2-0.8,0.8c0,0.6-0.2,1.3-0.4,1.9c-0.7,2-2.4,3.1-4.5,3.1c-5.7,0-11.3,0-17,0c-2.9,0-4.8-1.9-4.8-4.7 c0-5.6,0-11.2,0-16.7c0-1.6,0.4-2.1,2-2.1C8.9,8.7,13.3,8.7,17.7,8.7z M23.1,18.2c0-2.2-1.4-3.6-3.5-3.7c-1.3,0-2.4,0.5-3.3,1.3 c-0.4,0.4-0.7,0.3-1.2,0c-0.7-0.5-1.5-0.9-2.3-1.2c-1.8-0.5-4.2,0.4-4.5,2.7c-0.2,1.7,0.4,3.2,1.6,4.3c1.7,1.7,3.6,3.4,5.4,5.1 c0.3,0.3,0.6,0.3,0.9,0c1.7-1.7,3.5-3.4,5.2-5.1C22.5,20.7,23.2,19.6,23.1,18.2z M29.1,17.7c0,0.9,0,1.8,0,2.7 c0,1.6-0.3,1.5,1.5,1.5c1.6,0,2.9-0.7,3.6-2.2c0.7-1.6,0.8-3.2-0.3-4.7c-1-1.4-2.4-1.6-4-1.5c-0.6,0-0.8,0.2-0.8,0.8 C29.1,15.4,29.1,16.5,29.1,17.7z"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+  </body>
+</html>
 			</div>
 	</div>
   </body>
