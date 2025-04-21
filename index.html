@@ -6,9 +6,9 @@
 		<style>
 /*Pour que le script empêchant la scrollbar de décaler le background fonctionne, il faut "background-size: cover", et pas "background-position: center"*/
 		  body {
-			background-image: url('https://derpicdn.net/img/view/2020/5/10/2344321.jpg');
+			background-image: url('beyondequestria.jpg');
 			/*background-position-x: center;*/
-			background-size: cover;
+			background-size: auto 112vh;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			margin: 0;
@@ -411,29 +411,6 @@
 		  </div>
 		</div>
 	</div>
-	<script>
-// Empêcher la scrollbar de décaler le background
-
-fixBackgroundSizeCover = function(event) {
-
-  var bgImageWidth = 6886,
-    bgImageHeight = 2816,
-    bgImageRatio = bgImageWidth / bgImageHeight,
-    windowSizeRatio = window.innerWidth / window.innerHeight;
-
-  if (bgImageRatio > windowSizeRatio) {
-    document.body.style.backgroundSize = 'auto 100vh';
-  } else {
-    document.body.style.backgroundSize = '100vw auto';
-  }
-};
-
-fixBackgroundSizeCover();
-
-window.addEventListener('resize', fixBackgroundSizeCover);
-
-);
-</script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
 // Changer le titre de l'onglet en fonction de la section. Nécessite l'attribut title pour chaque élément a, et le lien jquery de la ligne précédente
