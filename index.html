@@ -4,19 +4,14 @@
     <title>Comics MLP en français</title>
 	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 		<style>
-/*Pour que le script empêchant la scrollbar de décaler le background fonctionne, il faut "background-size: cover", et pas "background-position: center"*/
 		  body {
 			background-image: url('beyondequestria.jpg');
-			/*background-position-x: center;*/
 			background-size: auto 112vh;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			margin: 0;
 			}
 		  #wrapper {
-			/*flex-direction: column;
-			overflow: hidden;
-			position: relative;*/
 			align-items: center;
 			display: flex;
 			justify-content: center;
@@ -33,7 +28,7 @@
 			height: auto;
 			background-color: #333642;
 			border-radius: 1.7rem;
-			/*pour l'animation au chargement*/
+			/*animation au chargement*/
 			opacity: 0;
 			margin-top: 50px;
 			animation: fadein 1s forwards;
@@ -44,7 +39,7 @@
 			  margin-top: 0;
 			  }
 			}
-/*Afficher uniquement la section target, et la dernière section de inner (= home) si aucune section n'est target*/
+/*afficher uniquement la section target, et la dernière section de inner (= home) si aucune section n'est target*/
 		  .inner > .section:target ~ .section:last-child,
 		  .inner > .section {
 			height: 0;
@@ -194,7 +189,7 @@
 			border-radius: 0.7rem;
 			text-align: center;
 			display: inline-block;
-			margin-left: 3px; /*pour contrer le overflow: hidden*/
+			margin-left: 3px; /*corrige l'effet de overflow: hidden*/
 			transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 	        }
 	      .button:hover {
